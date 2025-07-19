@@ -64,20 +64,20 @@ addStudentForm.addEventListener("submit", (event) => {
 });
 
 async function deleteStudent(id) {
-  return fetch(`https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student/${id}`, {
+  return await fetch(`https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student/${id}`, {
     method: "DELETE",
   })
 }
 
 async function addStudent(studentData) {
-  return fetch("https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student", {
+  return await fetch("https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student", {
     method: "POST",
     body: JSON.stringify(studentData),
   });
 }
 
 async function patchStudentsData(id, studentData) {
-  return fetch(`https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student/${id}`, {
+  return await fetch(`https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student/${id}`, {
     method: "PATCH",
     body: JSON.stringify(studentData),
   });
