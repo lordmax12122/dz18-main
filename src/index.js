@@ -17,7 +17,7 @@ const studentEnrolled = document.getElementById("isEnrolled");
 let id = null;
 
 async function getStudents() {
- await fetch("http://localhost:3000/students")
+ await fetch("https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student")
     .then((response) => response.json())
     .then(renderStudents)
 }
@@ -25,7 +25,7 @@ async function getStudents() {
 getStudentsBtn.addEventListener("click", getStudents);
 
 async function updateStudents(id) {
-  await fetch(`http://localhost:3000/students/${id}`)
+  await fetch(`https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student/${id}`)
     .then((response) => response.json())
     .then(({ name, age, course, skill, email, isEnrolled }) => {
       studentName.value = name;
@@ -64,20 +64,20 @@ addStudentForm.addEventListener("submit", (event) => {
 });
 
 async function deleteStudent(id) {
-  return fetch(`http://localhost:3000/students/${id}`, {
+  return fetch(`https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student/${id}`, {
     method: "DELETE",
   })
 }
 
 async function addStudent(studentData) {
-  return fetch("http://localhost:3000/students", {
+  return fetch("https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student", {
     method: "POST",
     body: JSON.stringify(studentData),
   });
 }
 
 async function patchStudentsData(id, studentData) {
-  return fetch(`http://localhost:3000/students/${id}`, {
+  return fetch(`https://687bd2dfb4bc7cfbda876303.mockapi.io/students/student/${id}`, {
     method: "PATCH",
     body: JSON.stringify(studentData),
   });
