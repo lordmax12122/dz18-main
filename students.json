@@ -1,0 +1,67 @@
+{
+  "students": [
+    {
+      "id": "ce42",
+      "name": "213",
+      "age": 213,
+      "course": "213",
+      "skills": "123",
+      "email": "m@gmail.com",
+      "isEnrolled": false
+    },
+    {
+      "id": "ff84",
+      "name": "Max",
+      "age": 14,
+      "course": "123",
+      "skills": "123",
+      "email": "m.ilchyshynn@gmail.com",
+      "isEnrolled": false
+    },
+    {
+      "id": "8b09",
+      "name": "123",
+      "age": 123,
+      "course": "123",
+      "skills": "123",
+      "email": "m.ilchyshynn@gmail.com",
+      "isEnrolled": false
+    },
+    {
+      "id": "b399",
+      "name": "123",
+      "age": 123,
+      "course": "123",
+      "skills": "123",
+      "email": "m.ilchyshynn@gmail.com",
+      "isEnrolled": false
+    },
+    {
+      "id": "959b",
+      "name": "Max",
+      "age": "15",
+      "course": "123123",
+      "skills": "adwaf",
+      "email": "max.ilchyshyn@gmail.com",
+      "isEnrolled": false
+    },
+    {
+      "id": "d136",
+      "name": "213",
+      "age": "213",
+      "course": "213",
+      "skill": "undefined",
+      "email": "m@gmail.com",
+      "isEnrolled": false
+    },
+    {
+      "id": "6f7e",
+      "name": "213",
+      "age": "213",
+      "course": "213",
+      "skill": "undefined",
+      "email": "m@gmail.com",
+      "isEnrolled": false
+    }
+  ]
+}

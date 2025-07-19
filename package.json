@@ -1,0 +1,32 @@
+{
+  "name": "dz18",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://lordmax12122.github.io/dz18-main/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /dz18-main",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "server": "npx json-server students.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordmax12122/dz18.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lordmax12122/dz18/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.15.4"
+  },
+  "devDependencies": {
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^2.0.1"
+  }
+}
